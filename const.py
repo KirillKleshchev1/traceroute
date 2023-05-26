@@ -1,0 +1,2 @@
+DATA_TO_RECV = 1024
+PORT = 80

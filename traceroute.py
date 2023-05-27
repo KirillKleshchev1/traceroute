@@ -25,7 +25,7 @@ def get_whois_data(address):
                 data += current_part
                 current_part = whois_sock.recv(DATA_TO_RECV)
             data = data.decode().lower()
-            for i in ['country', 'origin', 'originas']:
+            for i in ['country', 'origin', 'origins']:
                 if i in data:
                     ind = data.index(i)
                     record = data[ind:].split('\n')[0]
@@ -53,8 +53,8 @@ class Data:
             self.country = whois_data["country"]
         if 'origin' in whois_data:
             self.auto_sys = whois_data['origin']
-        if "originas" in whois_data:
-            self.auto_sys = whois_data['originas']
+        if "origins" in whois_data:
+            self.auto_sys = whois_data['origins']
 
     def __str__(self):
         result = f'{self.address}\n'

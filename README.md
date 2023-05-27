@@ -1,2 +1,2 @@
 # traceroute
-Пример запуска: python main.py mail.ru 10
+Пример запуска: sudo python3 main.py mail.ru --ttl 10
